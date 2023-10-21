@@ -6,3 +6,10 @@ work/
 # ignoring simulation artifacts
 
 processor.vcd
+
+# ignoring generated memory files
+
+dmem_out.mem
+inst_out.mem
+rf_out.mem
+

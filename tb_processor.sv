@@ -46,4 +46,12 @@ module tb_processor();
         $dumpvars(0, dut);
     end
 
+    // initialize memory
+    final
+    begin
+        $writememh("inst_out.mem", dut.inst_mem_i.mem);
+        $writememh("dmem_out.mem", dut.data_mem_i.mem);
+        $writememh("rf_out.mem", dut.reg_file_i.reg_mem);
+    end
+
 endmodule
