@@ -61,6 +61,7 @@ module processor
     logic [31:0] imm_id;
     logic [31:0] imm_ex;
 
+    logic [31:0] opr_res_if;
     logic [31:0] opr_res_ex;
     logic [31:0] opr_res_mem;
     logic [31:0] opr_res_wb;
@@ -71,7 +72,7 @@ module processor
     // --------------------- Instruction Fetch ---------------------
 
     // pc selection mux
-    assign mux_out_pc = sel_pc_if ? wdata_id : (pc_out_if + 32'd4);
+    assign mux_out_pc = sel_pc_if ? opr_res_if : (pc_out_if + 32'd4);
 
     // program counter
     pc pc_i
@@ -277,6 +278,11 @@ module processor
             dmem_out_wb <= dmem_out_mem;
             sel_wb_wb   <= sel_wb_mem;
         end
+    end
+
+    always_comb
+    begin
+        opr_res_if = opr_res_mem;
     end
 
     // --------------------- Write Back ---------------------
