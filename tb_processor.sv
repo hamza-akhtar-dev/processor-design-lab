@@ -35,8 +35,8 @@ module tb_processor();
     // initialize memory
     initial
     begin
-        $readmemb("inst.mem", dut.inst_mem_i.mem);
-        $readmemb("rf.mem", dut.reg_file_i.reg_mem);
+        $readmemh("inst.mem", dut.inst_mem_i.mem);
+        $readmemh("rf.mem", dut.reg_file_i.reg_mem);
     end
 
     // dumping the waveform

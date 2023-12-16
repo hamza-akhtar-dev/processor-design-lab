@@ -1,0 +1,88 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sat Dec 16 13:58:15 2023
+[*]
+[dumpfile] "C:\Users\hp\Desktop\processor_design_lab\processor.vcd"
+[dumpfile_mtime] "Sat Dec 16 13:52:22 2023"
+[dumpfile_size] 66757
+[savefile] "C:\Users\hp\Desktop\processor_design_lab\config.gtkw"
+[timestart] 0
+[size] 1280 649
+[pos] -165 -42
+*-7.000000 10 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_processor.
+[treeopen] tb_processor.dut.
+[sst_width] 197
+[signals_width] 274
+[sst_expanded] 1
+[sst_vpaned_height] 170
+@28
+tb_processor.dut.clk
+@29
+tb_processor.dut.rst
+@200
+-IF Stage Signals
+@22
+tb_processor.dut.pc_out_if[31:0]
+tb_processor.dut.opr_res_if[31:0]
+@28
+tb_processor.dut.sel_pc_if
+@200
+-ID Stage Signals
+@22
+tb_processor.dut.aluop_id[3:0]
+tb_processor.dut.imm_id[31:0]
+tb_processor.dut.inst_id[31:0]
+tb_processor.dut.pc_out_id[31:0]
+tb_processor.dut.rd_id[4:0]
+tb_processor.dut.rdata1_id[31:0]
+tb_processor.dut.rdata2_id[31:0]
+@28
+tb_processor.dut.rf_en_id
+tb_processor.dut.sel_opr_b_id
+tb_processor.dut.sel_pc_id
+tb_processor.dut.sel_wb_id[1:0]
+@22
+tb_processor.dut.wdata_id[31:0]
+@200
+-EX Stage Signals
+@22
+tb_processor.dut.aluop_ex[3:0]
+@28
+tb_processor.dut.dm_en_ex
+@22
+tb_processor.dut.imm_ex[31:0]
+tb_processor.dut.opr_res_ex[31:0]
+tb_processor.dut.pc_out_ex[31:0]
+tb_processor.dut.rd_ex[4:0]
+tb_processor.dut.rdata1_ex[31:0]
+tb_processor.dut.rdata2_ex[31:0]
+@28
+tb_processor.dut.sel_opr_a_ex
+tb_processor.dut.sel_opr_b_ex
+tb_processor.dut.sel_wb_ex[1:0]
+@200
+-MEM Stage Signals
+@28
+tb_processor.dut.dm_en_mem
+@22
+tb_processor.dut.dmem_out_mem[31:0]
+tb_processor.dut.opr_res_mem[31:0]
+tb_processor.dut.pc_out_mem[31:0]
+tb_processor.dut.rd_mem[4:0]
+tb_processor.dut.rdata2_mem[31:0]
+@28
+tb_processor.dut.sel_wb_mem[1:0]
+@200
+-WB Stage Signals
+@22
+tb_processor.dut.dmem_out_wb[31:0]
+tb_processor.dut.opr_res_wb[31:0]
+tb_processor.dut.pc_out_wb[31:0]
+tb_processor.dut.rd_wb[4:0]
+@28
+tb_processor.dut.sel_wb_wb[1:0]
+@22
+tb_processor.dut.wdata_wb[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

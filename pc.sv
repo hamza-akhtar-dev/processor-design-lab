@@ -4,6 +4,7 @@ module pc
 (
     input  logic        clk,
     input  logic        rst,
+    input  logic        en,
     input  logic [31:0] pc_in,
     output logic [31:0] pc_out
 );
@@ -14,7 +15,7 @@ module pc
         begin
             pc_out <= 0;
         end
-        else
+        else if(en)
         begin
             pc_out <= pc_in;
         end
