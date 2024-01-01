@@ -1,5 +1,6 @@
 module reg_file 
 (
+    input  logic        rst,
     input  logic        clk,
     input  logic        rf_en,
     input  logic [ 4:0] rs1,
@@ -22,7 +23,11 @@ module reg_file
     // synchronus write
     always_ff @(posedge clk) 
     begin
-        if(rf_en)
+        if(rst)
+        begin
+            reg_mem <= '{default: '0};
+        end
+        else if(rf_en)
         begin
             reg_mem[rd] <= wdata;
         end

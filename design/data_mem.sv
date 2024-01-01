@@ -1,5 +1,6 @@
 module data_mem
 (
+    input  logic        rst,
     input  logic        clk,
     input  logic        dm_en,
     input  logic [31:0] addr,
@@ -16,7 +17,11 @@ module data_mem
     // synchronous write
     always_ff @(posedge clk)
     begin
-        if(dm_en)
+        if(rst)
+        begin
+            mem <= '{default: '0};
+        end
+        else if(dm_en)
         begin
             mem[addr[31:2]] <= data_in;
         end

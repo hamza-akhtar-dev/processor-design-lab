@@ -157,6 +157,7 @@ module processor
     // register file
     reg_file reg_file_i
     (
+        .rst   ( rst            ),
         .clk   ( clk            ),
         .rf_en ( rf_en_id       ),
         .rd    ( rd_wb          ),
@@ -311,6 +312,7 @@ module processor
     // data memory
     data_mem data_mem_i
     (
+        .rst      ( rst           ),
         .clk      ( clk           ),
         .dm_en    ( dm_en_mem     ),
         .addr     ( opr_res_mem   ),
